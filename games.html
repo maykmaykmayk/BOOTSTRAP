@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Games</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+        :root {
+            --background-color: #9ec9fa; 
+            --navbar-color: #343a40; 
+            --navbar-text-color: #ffffff; 
+        }
+        body {
+            background: linear-gradient(-45deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+            font-family: 'Arial', sans-serif; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .games-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+            margin: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h1, p {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding-top: 20px;
+            transition: 0.3s ease-in-out;
+            color: white;
+            font-weight: bold;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ff9800;
+        }
+
+        .card-title {
+            color: black !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Joemike Gwapogi</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="https://www.visitlondon.com/">Dream Place to Live in</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="https://www.pinterest.com/my_inspired/civic-fd-8th-gen/">Cars I Like</a></li>
+        </ul>
+    </div>
+
+    <div class="container mt-4" style="margin-left: 260px;">
+        <h1>Welcome to My Games Page</h1>
+        <p>Here are some of the games I enjoy playing.</p>
+        <div class="games-container">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/565197caf987af4e4da307df6e2b235a28714736-837x469.jpg?w=1200&h=630&fm=webp&fit=crop&crop=center" class="card-img-top" alt="Game 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">League of Legends</h5>
+                        <a href="https://www.leagueoflegends.com/en-sg/download/" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-46207e34c7dd798d917b694420a4e46d" class="card-img-top" alt="Game 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Valorant</h5>
+                        <a href="https://playvalorant.com/en-us/download/" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
